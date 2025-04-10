@@ -1,0 +1,83 @@
+@media (max-width: 1175px){
+  .texto h2, .texto p{
+    text-align: center;
+    align-self: center;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 20em;
+  }
+  .texto p{
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px){
+  .biografia-contenido {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .carpeta-contenido{
+    padding: calc(5rem + (10 - 7.5) * ((100vw - 20rem)/ (100 - 20))) clamp(20px, 4vw, 40px);
+  }
+  .proyecto{
+    grid-template-columns: auto;
+    grid-template-rows:repeat(var(--filas), auto-fill);
+    gap:0;
+  }
+  .proyectos{
+    gap:clamp(50px, 5vw,100px);
+  }
+  .proyecto-imagen,.proyecto-contenido{
+    grid-row:1/2;
+  }
+  .proyecto-imagen{
+    display:none;
+  }
+  .proyecto-contenido{
+    align-self: end;
+  }
+
+  .carta-texto h2{
+    font-size: clamp(40px , 12vw, 80px);
+    line-height: 0.5;
+  }
+  form{
+    width: 100%;
+  }
+  .form-row{
+    flex-direction: column;
+    margin-bottom:20px;
+    gap: 0;
+  }
+}
+
+@media (max-width: 600px){
+  .carta-animacion{
+      padding-left: clamp(10px, 7vw, 40px);
+  }
+  .carta-animacion-contenedor{
+      transform: scale(0.7);
+  }
+}
+@media (max-width: 480px){
+  .carpeta-contenido{
+    padding: calc(6rem + (10 - 7.5) * ((100vw - 20rem)/ (100 - 20))) clamp(20px, 4vw, 40px);
+  }
+  .carta-texto h2{
+    line-height: 0.3;
+  }
+  .carta-texto p{
+    font-size: clamp(16px, 5vw, 24px);
+  }
+ .carta-animacion{
+      padding: 0;
+  }
+  .carta-animacion-contenedor{
+      transform: scale(0.6);
+  }
+}
+@media (max-width: 400px){
+    .carta-animacion-contenedor{
+      transform: scale(0.4);
+  }
+  
+}
