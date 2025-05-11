@@ -308,7 +308,6 @@ a , li{
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
 }
-}
 /*para ocultar el svg*/
 svg.marco {
   position: absolute;
